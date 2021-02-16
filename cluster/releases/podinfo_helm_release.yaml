@@ -4,9 +4,7 @@ metadata:
   name: podinfo
   namespace: prod
   annotations:
-    fluxcd.io/ignore: "false"
-    fluxcd.io/automated: "true"
-    fluxcd.io/tag.chart-image: semver:~3.1
+    fluxcd.io/automated: "false"
 spec:
   releaseName: podinfo
   chart:
@@ -18,7 +16,7 @@ spec:
       repository: stefanprodan/podinfo
       tag: 3.1.0
     service:
-      enabled: true
+      enabled: false
       type: ClusterIP
     ingress:
       enabled: true
