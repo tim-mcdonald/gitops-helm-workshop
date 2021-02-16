@@ -10,7 +10,7 @@ spec:
   chart:
     git: git@github.com:tim-mcdonald/gitops-helm-workshop
     ref: master
-    path: ../charts/podinfo
+    path: "../charts/podinfo"
   values:
     image:
       repository: stefanprodan/podinfo
