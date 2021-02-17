@@ -20,13 +20,13 @@ spec:
     metrics:
     - name: error-rate
       templateRef:
-        name: error-rate
+        name: error-rate.ps-system
       thresholdRange:
         max: 1
       interval: 30s
     - name: latency
       templateRef:
-        name: latency
+        name: latency.ps-system
       thresholdRange:
         max: 0.5
       interval: 30s
