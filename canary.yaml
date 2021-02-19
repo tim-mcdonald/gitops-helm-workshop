@@ -27,7 +27,7 @@ spec:
       interval: 30s
     - name: request-latency
       templateRef:
-        name: latency
+        name: request-latency
         namespace: ps-system
       thresholdRange:
         max: 0.5
