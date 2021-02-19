@@ -6,7 +6,7 @@ metadata:
   annotations:
     fluxcd.io/ignore: "false"
 spec:
-  releaseName: load-tester
+  releaseName: loadtester
   chart:
     git: https://github.com/weaveworks/flagger
     #ref: 1.0.0-rc.1
