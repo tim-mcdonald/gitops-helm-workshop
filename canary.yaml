@@ -39,13 +39,13 @@ spec:
     webhooks:
       - name: acceptance-test
         type: pre-rollout
-        url: http://loadtester.prod/
+        url: http://load-tester.prod/
         timeout: 30s
         metadata:
           type: bash
           cmd: "curl -sd 'test' http://podinfo-canary.prod:9898/token | grep token"
       - name: load-test
         type: rollout
-        url: http://loadtester.prod/
+        url: http://load-tester.prod/
         metadata:
           cmd: "hey -z 2m -q 10 -c 2 http://podinfo-canary.prod:9898/"
