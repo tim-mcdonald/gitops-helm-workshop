@@ -9,7 +9,7 @@ spec:
   releaseName: loadtester
   chart:
     git: https://github.com/weaveworks/flagger
-    #ref: 1.0.0-rc.1
+    ref: main
     path: charts/loadtester
   values:
     fullnameOverride: load-tester
